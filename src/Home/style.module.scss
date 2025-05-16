@@ -1,0 +1,26 @@
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        width: 650px;
+        margin-right: 16px;
+        padding: 4px 12px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        :hover {
+            color: lawngreen;
+
+        }
+    }
+}

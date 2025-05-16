@@ -1,0 +1,29 @@
+.container {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #696969;
+    margin-bottom: 24px;
+
+    ul {
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            position: absolute;
+            right: 18px;
+            align-items: center;
+
+            :hover {
+                color: azure;
+            }
+        }
+    }
+}
