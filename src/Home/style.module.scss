@@ -87,6 +87,8 @@
                 }
             }
 
+
+
         }
 
     }
@@ -95,11 +97,28 @@
         color: #00FF00;
     }
 
+    &__negativo {
+        color: #800000;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
     button {
         background-color: #4682B4;
         margin-top: 24px;
         width: 150px;
         margin-left: 16px;
+        margin-bottom: 16px;
         color: white;
         border-radius: 8px;
         font-weight: bold;
