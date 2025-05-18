@@ -6,7 +6,8 @@ import { Layout } from './Components/layout'
 
 
 export const router = createBrowserRouter([
-    {    element: <Layout/>,
+    {
+        element: <Layout />,
         children: [
             {
 
@@ -14,17 +15,13 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
 
-            {
-                path:'/detail/:id',
-                element:<Detail/>
-            },
 
             {
-                path:"*",
-                element:<NotFound/>
+                path: "*",
+                element: <NotFound />
             }
-        
-        
+
+
         ]
     }
 ])

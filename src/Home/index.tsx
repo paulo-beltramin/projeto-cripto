@@ -4,7 +4,7 @@ import { BsSearch } from "react-icons/bs"
 
 import style from './style.module.scss'
 
-type bitProps = {
+export type bitProps = {
   id: string,
   name: string,
   symbol: string,
@@ -61,7 +61,7 @@ export const Home = () => {
           return priceFormater
         })
 
-        setCoins([...coins, ...formaterPrice]
+        setCoins([...coins, ...formaterPrice])
       })
 
   }
@@ -111,7 +111,7 @@ export const Home = () => {
                 <tr key={item.id}>
                   <div className={style.container_table__logo}>
                     <img src={`https://assets.coincap.io/assets/icons/${item.symbol.toLowerCase()}@2x.png`} alt="logo cripto moeda" />
-                    <td><Link to={''}>{item.name} | {item.symbol}</Link></td>
+                    <td><Link to={`/detail/${item.id}`}>{item.name} | {item.symbol}</Link></td>
                   </div>
                   <td>{item.priceCompact}</td>
                   <td>{item.formatedPrice}</td>
